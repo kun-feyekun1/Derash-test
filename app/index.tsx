@@ -1,3 +1,4 @@
+import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 import React, { useEffect, useRef, useState } from "react";
 import {
@@ -11,8 +12,10 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
-import { Ionicons } from "@expo/vector-icons";
+import {
+  SafeAreaView,
+  useSafeAreaInsets,
+} from "react-native-safe-area-context";
 
 const { width } = Dimensions.get("window");
 
@@ -44,7 +47,7 @@ export default function Home() {
       <ScrollView
         style={styles.container}
         contentContainerStyle={{
-          paddingBottom: insets.bottom + 20,
+          paddingBottom: insets.bottom + 50,
         }}
       >
         <Animated.View style={{ opacity: fadeAnim }}>
