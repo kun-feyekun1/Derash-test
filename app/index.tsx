@@ -11,11 +11,7 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import {
-  SafeAreaView,
-  useSafeAreaInsets,
-} from "react-native-safe-area-context";
-
+import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 
 const { width } = Dimensions.get("window");
@@ -48,11 +44,11 @@ export default function Home() {
       <ScrollView
         style={styles.container}
         contentContainerStyle={{
-          paddingBottom: insets.bottom + 50, 
+          paddingBottom: insets.bottom + 20,
         }}
       >
         <Animated.View style={{ opacity: fadeAnim }}>
-          <Text style={styles.heading}> Expo SDK 55 Test</Text>
+          <Text style={styles.heading}>Expo SDK 55 Test</Text>
           <Text style={styles.subHeading}>
             Advanced React Native UI running successfully
           </Text>
@@ -132,6 +128,8 @@ export default function Home() {
           <Text style={styles.bigButtonText}>Launch App</Text>
         </TouchableOpacity>
 
+        <View style={{ height: 50 }} />
+
         <View style={{ marginTop: 40 }}>
           <TouchableOpacity
             style={styles.bigButton}
@@ -159,19 +157,16 @@ const styles = StyleSheet.create({
     paddingTop: 60,
     paddingHorizontal: 20,
   },
-
   heading: {
     color: "white",
     fontSize: 34,
     fontWeight: "bold",
   },
-
   subHeading: {
     color: "#94A3B8",
     marginTop: 10,
     fontSize: 16,
   },
-
   heroCard: {
     backgroundColor: "#6C63FF",
     borderRadius: 25,
@@ -183,21 +178,18 @@ const styles = StyleSheet.create({
     shadowRadius: 10,
     elevation: 10,
   },
-
   heroTitle: {
     color: "white",
     fontSize: 24,
     fontWeight: "bold",
     marginTop: 15,
   },
-
   heroText: {
     color: "#E2E8F0",
     textAlign: "center",
     marginTop: 10,
     lineHeight: 22,
   },
-
   section: {
     color: "white",
     fontSize: 22,
@@ -205,13 +197,11 @@ const styles = StyleSheet.create({
     marginTop: 35,
     marginBottom: 15,
   },
-
   counterBox: {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
   },
-
   button: {
     backgroundColor: "#6C63FF",
     width: 60,
@@ -220,20 +210,17 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-
   buttonText: {
     color: "white",
     fontSize: 28,
     fontWeight: "bold",
   },
-
   counter: {
     color: "white",
     fontSize: 32,
     marginHorizontal: 25,
     fontWeight: "bold",
   },
-
   input: {
     backgroundColor: "#1E293B",
     padding: 18,
@@ -241,13 +228,11 @@ const styles = StyleSheet.create({
     color: "white",
     fontSize: 16,
   },
-
   greeting: {
     color: "#CBD5E1",
     marginTop: 15,
     fontSize: 18,
   },
-
   card: {
     backgroundColor: "#1E293B",
     width: width * 0.45,
@@ -256,20 +241,17 @@ const styles = StyleSheet.create({
     marginRight: 15,
     alignItems: "center",
   },
-
   cardTitle: {
     color: "white",
     marginTop: 15,
     fontSize: 18,
     fontWeight: "600",
   },
-
   statsContainer: {
     flexDirection: "row",
     justifyContent: "space-between",
     marginTop: 30,
   },
-
   statCard: {
     backgroundColor: "#1E293B",
     width: "48%",
@@ -277,18 +259,15 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     alignItems: "center",
   },
-
   statNumber: {
     color: "#6C63FF",
     fontSize: 32,
     fontWeight: "bold",
   },
-
   statLabel: {
     color: "#CBD5E1",
     marginTop: 10,
   },
-
   bigButton: {
     marginTop: 40,
     backgroundColor: "#6C63FF",
@@ -298,7 +277,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-
   bigButtonText: {
     color: "white",
     fontSize: 18,
